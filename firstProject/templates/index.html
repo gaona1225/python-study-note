@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block header %}
+	<h2>Login</h2>
+	<p>用用户名：{{user}}登录</p>
+{% end %}
+{% block body %}
+	<form meth="POST">
+		{% raw xsrf_from_html() %}
+		<p><span>UserName:</span><input type="text" name="username" /></p>
+		<p><span>PassWord:</span><input type="password" name="password" /></p>
+		<p><input type="button" value="login" name="login" id="login" /></p>
+	</form>
+{% end %}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Learning Python-login</title>
+</head>
+<body>
+	<header>
+		{% block header %}{% end %}
+	</header>
+	<content>
+		{% block body %}{% end %}
+	</content>
+	<footer>
+		{% set website = "<a href="https://www.baidu.com">Welcome to baidu</a>" %}
+		{% raw website %}
+	</footer>
+	
+	<script type="text/javascript" src="{{static_url("js/jquery.min.js")}}"></script>
+	<script type="text/javascript" src="{{static_url("js/script.js")}}"></script>
+</body>
